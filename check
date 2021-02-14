@@ -1,0 +1,6 @@
+local whitelistecheck = loadstring(game:HttpGet("https://raw.githubusercontent.com/MagicalDestroyer/WHITELIST/main/whitelist.lua"))()
+if whitelistecheck[game:service('Players').LocalPlayer.UserId] then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MagicalDestroyer/WHITELIST/main/TMDGUI"))()
+else
+game:service('Players').LocalPlayer:Kick('Not Whitelisted, dm y'know who to get whitelisted!')
+end
